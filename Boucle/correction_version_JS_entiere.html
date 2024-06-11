@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./csscorrection.css">
+    </head>
+    <body>
+        <!-- <table>
+            <tbody>
+                <tr class="casebleue">
+                    <td>x</td>
+                    <td>1</td>            
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>            
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>            
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td class="casebleue">1</td>
+                    <td class="gras">1</td>            
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>            
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>            
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>        
+            </tbody>
+        </table>
+        <br> -->
+
+        <script language="javascript">
+        //Je mets en place le tableau
+        document.write("<table>");
+        document.write("<tbody>");
+
+        //Je vais créer la premiere ligne de mon tableau
+        document.write('<tr class="casebleue">');
+        
+        //Modele de la premiere ligne
+        //x 1 2 3 4 5 6 7 8 9 10
+        document.write('<td>x</td>');
+        let i=1;
+        for(i;i<=10;i++)
+            {
+            document.write("<td>"+ i +"</td>");   
+            }
+
+        /*while(i<=10)
+            {
+            document.write("<td>"+ i +"</td>");
+            i=i+1;    
+            }*/
+
+        //Je ferme la premiere ligne
+        document.write("</tr>");
+
+        //Modele des autres lignes
+        //1 1 2 3 4 5 6 7 8 9 10 => table 1
+        //2 2 4 6 8 10 12 14 16 18 20 => table 2
+        //etc etc...
+
+        let tablemax=prompt("La table maximum à calculer ?");
+        //Pour les tables de multiplication allant de 1 à 10
+        //for(let table=1;table<=10;table++)
+        for(let table=1;table<=tablemax;table++)
+            {
+            //Je declare la ligne
+            document.write("<tr>");
+                
+            //J'écris la premiere case de la table de multiplication
+            document.write('<td class="casebleue">'+table+'</td>');
+            
+            //Jecris les resultats des operations des autres cases
+            //table*1 table*2 .... table*10
+            for(let j=1;j<=10;j++)
+                {
+                let resultat=table*j;
+                document.write('<td>'+resultat+'</td>');
+                }
+            
+            /*let j=1;
+            while(j<=10)
+                {
+                let resultat=table*j;
+                document.write('<td>'+resultat+'</td>');
+                j=j+1;
+                }*/
+
+            //Je ferme la premiere ligne
+            document.write("</tr>");
+            }
+
+        //On ferme le tableau
+        document.write("</tbody>");
+        document.write("</table>");
+
+        </script>
+    </body>
+</html>

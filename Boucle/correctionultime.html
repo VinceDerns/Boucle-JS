@@ -1,0 +1,486 @@
+Karm Tury
+#4121
+
+Ourso Ni — 02/01/2023 14:25
+TP1 JS : Exercice sur les variables et les différentes interprétations/effets
+Ourso Ni — 02/01/2023 14:45
+<!DOCTYPE HTML>
+<html lang='fr'>
+    <head>
+        <title>Titre de la page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- <script src="exemple.js"></script> -->
+        <script language="javascript">
+            le code JS ici
+        </script>
+    </body>
+</html>
+Ourso Ni — 02/01/2023 15:09
+Type de fichier joint : acrobat
+TP1JS.pdf
+61.97 KB
+Ourso Ni — 02/01/2023 16:32
+Type de fichier joint : acrobat
+TP1JS_correction.pdf
+62.49 KB
+Ourso Ni 2 — 03/01/2023 10:55
+<!-- TABLE MULTIPLICATION AVEC FOR -->
+<!DOCTYPE HTML>
+<html lang='fr'>
+    <head>
+        <title>Titre de la page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- <script src="exemple.js"></script> -->
+        <script language="javascript">
+            //J'écris le chiffre pour definir la table de multiplication
+            let table=prompt("Quelle table de multiplication souhaitée ?");
+            //Je convertis le format texte en format chiffre
+            table=parseInt(table);
+
+            //POUR chaque ligne,
+            //Jusqu'à 10 max inclus (<=), 
+            //je calcule l'operation de la table
+            let indice=0;
+            //for(indice;indice<=10;indice++)
+            for(indice;indice<=10;indice=indice+1)
+                {
+                //document.write("Je compte : " + chiffre + "<br>");
+                //Je stocke le resultat
+                let resultat=table*indice;
+                //J'affiche la données
+                document.write("<p>"+ table + " x "  + indice + " = " + resultat + " </p>");
+                }
+        </script>
+    </body>
+</html>
+EXERCICE 2 JS :  faire une boucle FOR qui affiche les valeurs 10 à 44, par pas de 2 
+Ourso Ni 2 — 03/01/2023 11:08
+EXERCICE 3 JS : faire une boucle qui affiche 90, 80... 20, 10, 0. 
+Ourso Ni 2 — 03/01/2023 11:34
+CORRECTION EXERCICE 2 
+<!-- FOR INCREMLENTATION SPECIFIQUE -->
+<!DOCTYPE HTML>
+<html lang='fr'>
+    <head>
+        <title>Titre de la page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- <script src="exemple.js"></script> -->
+        <script language="javascript">
+            //POUR chaque élément de 10,
+            //Jusqu'à 44 max inclus (<=), 
+            //j'ajoute 2
+            let element=10;
+            for(element;element<=44;element=element+2)
+                {
+                //J'affiche la donnée
+                document.write("<p>" + element + " </p>");
+                }
+        </script>
+    </body>
+</html>
+Ourso Ni 2 — 03/01/2023 11:55
+CORRECTION EXERCICE 3
+<!-- FOR DECREMENTATION SPECIFIQUE -->
+<!DOCTYPE HTML>
+<html lang='fr'>
+    <head>
+        <title>Titre de la page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- <script src="exemple.js"></script> -->
+        <script language="javascript">
+            //POUR chaque élément de 90,
+            //Jusqu'à 0 min inclus (>=), 
+            //je diminue de 10
+            let element=90;
+            for(element;element>=0;element=element-10)
+                {
+                //J'affiche la donnée
+                document.write("<p>" + element + " </p>");
+                }
+        </script>
+    </body>
+</html>
+Ourso Ni 2 — 03/01/2023 14:27
+EXERCICE 4 WHILE : 
+
+1/ PROMPT : Saisir une table à afficher
+Ex : 5
+
+2/ PROMPT : Jusqu'à combien tu veux compter
+Ex : 3
+
+3/ RESULTAT FINAL
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+
+WHILE exclusivement !!
+Ourso Ni 2 — 03/01/2023 14:42
+EXERCICE 5 WHILE : 
+
+1/ Inviter une personne à saisir le chiffre 9
+
+2/ Tant que le chiffre saisi est différent de 9, on repose la question
+
+3/ Une fois bon, on met un popup "Merci de votre attention !" 
+Ourso Ni 2 — 03/01/2023 15:57
+CORRECTION EXERCICE 4 JS :
+<!DOCTYPE HTML>
+<html lang='fr'>
+    <head>
+        <title>Titre de la page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- <script src="exemple.js"></script> -->
+        <script language="javascript">
+        //Je veux proposer un chiffre pour le choix de la table
+        let table=prompt("La table souhaitée ?");
+
+        //Je veux dire jusqu'à combien tu comptes la table
+        let combiendefois = prompt("Combien de fois ?");
+
+        //Tant que je ne depasse pas le nombre de ligne à faire
+        let nblignes=1;
+        while(nblignes<=combiendefois)
+            {
+            //Je fais le calcul
+            let calcul=table*nblignes;
+
+            //J'affiche le resultat
+            document.write(table + "x" + nblignes + "=" + calcul);
+            
+            //Je passe à la ligne suivante
+            nblignes=nblignes+1;
+            }
+
+        </script>
+    </body>
+</html>
+Ourso Ni 2 — 03/01/2023 16:31
+Image
+<!DOCTYPE HTML>
+<html lang='fr'>
+    <head>
+        <title>Titre de la page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- <script src="exemple.js"></script> -->
+        <script language="javascript">
+            //Inviter une personne à saisir le chiffre 9
+            let chiffre=prompt("Saisir le chiffre 9");
+            chiffre=parseInt(chiffre);
+
+            //Tant que le chiffre saisi est différent de 
+            //9, 
+            while(chiffre!=9)
+                {
+                //on repose la question
+                chiffre=prompt("Saisir le chiffre 9");
+                chiffre=parseInt(chiffre);
+                }
+
+            //Une fois bon, on met un popup "Merci de votre attention !"
+            alert("Merci de votre attention !");
+        </script>
+    </body>
+</html>
+CORRECTION EXERCICE 5 JS
+Je suis gentil 😉
+Petit astuce : Essayer de décomposer le tableau ligne par ligne 🙂
+Bon courage en tout cas 🙂 
+bdnn — 03/01/2023 16:41
+sur exel je peut le faire mais pas en java
+Ourso Ni 2 — 03/01/2023 16:41
+non en web :p
+kratos — 03/01/2023 17:56
+5
+Ourso Ni 2 — Hier à 11:41
+EXERCICE 6 JS : CORRECTION TABLE multiplication
+.casebleue
+    {
+        background-color: #0072c5;
+        color: white;
+        /*color: #FFFFFF;*/
+        /*color: rgb(255,255,255);*/
+    }
+
+.gras
+    {
+    font-weight: bold;
+    }
+
+table
+    {
+    border-collapse: collapse;
+    }
+
+tr,td
+    {
+    border:2px solid rgb(218, 218, 218);
+    width:3em;
+    height:3em;
+    text-align:center;
+    }
+
+    /* ===== Tailles ===== */
+@media only screen and (max-width: 319px)  
+    {
+    tr
+        {
+        font-size: 10px;
+        }
+    }
+
+/* Iphone X*/
+@media only screen and (max-width: 767px) and (min-width: 320px)  
+    {
+    tr
+        {
+        font-size: 25px;
+        }      
+    }
+
+/* Ipad */
+@media only screen and (max-width: 1023px) and (min-width: 768px)  
+    {
+    tr
+        {
+        font-size: 35px;
+        }  
+    }
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px)  
+    {
+
+    }    
+
+/* PC Portable */
+@media only screen and (max-width: 1535px) and (min-width: 1280px)  
+    {
+    tr
+        {
+        font-size: 40px;
+        }  
+    }    
+
+@media only screen and (max-width: 1919px) and (min-width: 1536px)  
+    {
+
+    }
+
+@media only screen and (max-width: 2559px) and (min-width: 1920px)  
+    {
+    tr
+        {
+        font-size: 35px;
+        }    
+    }       
+
+@media only screen and (min-width: 2560px)  
+    {
+    tr
+        {
+        font-size: 55px;
+        }  
+    }   
+ 
+HTML VERSION JS ENTIERE
+<html>
+    <head>
+        <link rel="stylesheet" href="tableau.css">
+    </head>
+    <body>
+        <table>
+Afficher plus
+JS2.html
+4 Ko
+HTML VERSION CODE HTML + JS INTEREACTIF UNIQUEMENT
+<html>
+    <head>
+        <link rel="stylesheet" href="tableau.css">
+    </head>
+    <body>
+        <table>
+Afficher plus
+JS3.html
+3 Ko
+Ourso Ni 2 — Hier à 13:37
+EXERCICIE 7 JS : Ecrire un formulaire 
+
+1/ Label : Preférez vous le coca-cola ou le pepsi ?
+2/ Champs de saisie pour stocker la réponse
+3/ Bouton envoyer : 
+<input type="submit" name="valider" value="Envoyer">
+
+
+Objectif : Verifier que la réponse coincide et afficher la valeur
+
+<script language="JavaScript">
+function donnees()
+  {
+    
+  }
+</script>
+
+
+Pour la création du formulaire :
+<form name="formulaire" action="" method="post" onSubmit="donnees()">
+
+
+Astuce : Pour recuperer le contenu d'un champs de saisie avec l'ID "choix", 
+let choix = document.getElementById("choix").value;
+ 
+Ourso Ni 2 — Aujourd’hui à 09:27
+CORRECTION EXERCICE 7 JS
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Afficher plus
+JS1.html
+4 Ko
+EXERCICE MULTIPLICATION AVEC LE GRAS JS
+<html>
+    <head>
+        <link rel="stylesheet" href="tableau.css">
+    </head>
+    <body>
+        <table>
+Afficher plus
+JS2.html
+4 Ko
+﻿
+<html>
+    <head>
+        <link rel="stylesheet" href="tableau.css">
+    </head>
+    <body>
+        <table>
+            <tbody>
+                <tr class="casebleue">
+                    <td>x</td>
+                    <td>1</td>            
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>            
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>            
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td class="casebleue">1</td>
+                    <td class="gras">1</td>            
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>            
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>            
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr>        
+            </tbody>
+        </table>
+        <br>
+
+        <script language="javascript">
+        //Je mets en place le tableau
+        document.write("<table>");
+        document.write("<tbody>");
+
+        //Je vais créer la premiere ligne de mon tableau
+        document.write('<tr class="casebleue">');
+        
+        //Modele de la premiere ligne
+        //x 1 2 3 4 5 6 7 8 9 10
+        document.write('<td>x</td>');
+        let i=1;
+        for(i;i<=10;i++)
+            {
+            document.write("<td>"+ i +"</td>");   
+            }
+
+        /*while(i<=10)
+            {
+            document.write("<td>"+ i +"</td>");
+            i=i+1;    
+            }*/
+
+        //Je ferme la premiere ligne
+        document.write("</tr>");
+
+        //Modele des autres lignes
+        //1 1 2 3 4 5 6 7 8 9 10 => table 1
+        //2 2 4 6 8 10 12 14 16 18 20 => table 2
+        //etc etc...
+
+        let tablemax=prompt("La table maximum à calculer ?");
+        //Pour les tables de multiplication allant de 1 à 10
+        //for(let table=1;table<=10;table++)
+        for(let table=1;table<=tablemax;table++)
+            {
+            //Je declare la ligne
+            document.write("<tr>");
+                
+            //J'écris la premiere case de la table de multiplication
+            document.write('<td class="casebleue">'+table+'</td>');
+            
+            //Jecris les resultats des operations des autres cases
+            //table*1 table*2 .... table*10
+            for(let j=1;j<=10;j++)
+                {
+                //Si table est egale à j, on le met en gras
+                if(table==j)
+                    {
+                    let resultat=table*j;
+                    document.write('<td class="gras">'+resultat+'</td>');
+                    }  
+                //Sinon on le met en classique     
+                else
+                    {
+                    let resultat=table*j;
+                    document.write('<td>'+resultat+'</td>');
+                    }
+                }
+            
+            /*let j=1;
+            while(j<=10)
+                {
+                let resultat=table*j;
+                document.write('<td>'+resultat+'</td>');
+                j=j+1;
+                }*/
+
+            //Je ferme la premiere ligne
+            document.write("</tr>");
+            }
+
+        //On ferme le tableau
+        document.write("</tbody>");
+        document.write("</table>");
+
+        </script>
+    </body>
+</html>

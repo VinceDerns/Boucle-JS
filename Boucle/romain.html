@@ -1,0 +1,32 @@
+<table id="myTable">
+</table>
+<script type="text/javascript">
+    // get table node
+    const table = document.getElementById("myTable");
+    // y axis
+    for (let i = 0; i < 11; i++) {
+        // row
+        const row = document.createElement("tr");
+        // x axis
+        for (let j = 0; j < 11; j++) {
+            const cell = document.createElement("td");
+            // handle headers
+            if (i === 0 || j === 0) cell.style["background"] = "lightblue";
+            if (i === 0 && j === 0) {
+                cell.setHTML("x");
+            }
+            else if (j === 0) {
+                cell.setHTML(i === 0 ? 1 : i);
+            } else if (i === 0) {
+                cell.setHTML(j === 0 ? 1 : j);
+            }
+            else {
+                // highlight when both factors are equal
+                if (i == j) cell.style["font-weight"] = "bold";
+                cell.setHTML((i) * (j));
+            }
+            row.appendChild(cell);
+        }
+        table.append(row);
+    }
+</script>

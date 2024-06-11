@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang='fr'>
+
+<head>
+    <title>Titre de la page</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+
+    <script language="javascript">
+
+        // 1/ PROMPT : Saisir une table à afficher
+        // Ex : 5
+
+        // 2/ PROMPT : Jusqu'à combien tu veux compter
+        // Ex : 3
+
+        // 3/ RESULTAT FINAL
+        // 5 x 1 = 5
+        // 5 x 2 = 10
+        // 5 x 3 = 15
+
+
+        // je veux créer un promp de la table de multiplication à afficher.
+        // let table = prompt("Saisir une table de multiplication à afficher.");
+        // je veux créer un promp du nombre de fois que je veux multiplier.
+        // let combien = prompt("Jusqu'à combien tu veux calculer ?")
+        // je recupère ce que j'ai taper
+        // table = parseInt(table);
+        // combien = parseInt(combien);
+
+        // let nbligne=1;
+
+        // je veux faire une boucle en while qui vas afficher la table de multiplication que j'ai choisi puis calculer autant que j'ai choisi.
+        // while (nbligne <= combien)
+        // {    
+        //     result = table*nbligne
+        //     document.write(table + "*" + nbligne + "=" + result + "<br>");
+        //     nbligne=nbligne+1;
+        // }   
+
+
+        // EXERCICE 5 WHILE : 
+
+        // 1/ Inviter une personne à saisir le chiffre 9
+        let chiffre = prompt("Saisir le chiffre 9");
+        chiffre = parseInt(chiffre);
+        // 2/ Tant que le chiffre saisi est différent de 9, on repose la question
+
+        while (chiffre != 9) {
+            chiffre = prompt("Saisir le chiffre 9");
+            chiffre = parseInt(chiffre);
+        }
+        alert("Merci de votre attention !");
+// 3/ Une fois bon, on met un popup "Merci de votre attention !"
+// document.write(confirm("Merci de votre attention !"));
+    </script>
+</body>
+
+</html>

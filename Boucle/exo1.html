@@ -1,0 +1,32 @@
+<!-- TABLE MULTIPLICATION AVEC FOR -->
+<!DOCTYPE HTML>
+<html lang='fr'>
+    <head>
+        <title>Titre de la page</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+        <!-- <script src="exemple.js"></script> -->
+        <script language="javascript">
+            //J'écris le chiffre pour definir la table de multiplication
+            let table=prompt("Quelle table de multiplication souhaitée ?");
+            //Je convertis le format texte en format chiffre
+            table=parseInt(table);
+
+            //POUR chaque ligne,
+            //Jusqu'à 10 max inclus (<=), 
+            //je calcule l'operation de la table
+            let indice=0;
+            //for(indice;indice<=10;indice++)
+            for(indice;indice<=10;indice=indice+1)
+                {
+                //document.write("Je compte : " + chiffre + "<br>");
+                //Je stocke le resultat
+                let resultat=table*indice;
+                //J'affiche la données
+                document.write("<p>"+ table + " x "  + indice + " = " + resultat + " </p>");
+                }
+        </script>
+    </body>
+</html>

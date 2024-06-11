@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./table.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <script language ="javascript">
+//         <table>
+//     <tbody>
+//         <tr>
+//             <td>x</td>
+//             <td class="casebleu">1</td>
+//             <td class="casebleu">2</td>
+//             <td class="casebleu">3</td>
+//             <td class="casebleu">4</td>
+//             <td class="casebleu">5</td>
+//             <td class="casebleu">6</td>
+//             <td class="casebleu">7</td>
+//             <td class="casebleu">8</td>
+//             <td class="casebleu">9</td>
+//             <td class="casebleu">10</td>
+//         </tr>
+//         <tr>
+//             <td class="casebleu">1</td>
+//             <td class="gras">1</td>
+//             <td>2</td>
+//             <td>3</td>
+//             <td>4</td>
+//             <td>5</td>
+//             <td>6</td>
+//             <td>7</td>
+//             <td>8</td>
+//             <td>9</td>
+//             <td>10</td>
+//         </tr>
+//     </tbody>
+// </table>
+
+// je mets en place le tableau
+    document.write("<table>");
+    document.write("<tbody>");
+// je vais créer la première ligne de mon tableau
+document.write('<td class="casebleu">')
+// x 1 2 3 4 5 6 7 8 9 10
+document.write('<td>x</td>')
+for (let i = 1; i <= 10; i++)
+{
+    document.write("<td>" + i + "</td>");
+}
+// Même chose en boucle while !
+// let i=1
+// while(i<=10)
+// {
+//     document.write("<td>" + i + "</td>");
+//     i=i+1
+// }
+
+//  je ferme la première ligne
+document.write("</tr>")
+
+
+
+    </script>    
+</body>
+</html>

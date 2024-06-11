@@ -1,0 +1,25 @@
+.casebleu
+{
+    color: white;
+    background-color: #0072c5;
+}
+
+table
+{
+    border-collapse: collapse;
+    border: 1px solid grey;    
+    text-align: center;
+}
+
+th, td
+{    
+    font-size: 20px;    
+    border: 1px solid grey;
+    width: 2em;
+    height: 2em;
+}
+
+.gras
+{
+    font-weight: bold;
+}

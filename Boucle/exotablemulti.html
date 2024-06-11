@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang='fr'>
+
+<head>
+    <title>Table de Multiplication</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table id="mytable">
+
+    </table>
+    <script type="text/javascript">
+
+        let table = document.getElementById("mytable");
+        let sortie = "";
+
+        for (let i = 1; i <= 10; i++) {
+            sortie += "<tr>";
+            for (let j = 1; j <= 10; j++) {
+                sortie += "<td>" + i * j + "</td>";
+            }
+            sortie += "</tr>"
+        }
+        table.innerHTML = sortie;
+    </script>
+
+</body>
+
+</html>

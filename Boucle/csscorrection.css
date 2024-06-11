@@ -1,0 +1,87 @@
+.casebleue
+    {
+        background-color: #0072c5;
+        color: white;
+        /*color: #FFFFFF;*/
+        /*color: rgb(255,255,255);*/
+    }
+
+.gras
+    {
+    font-weight: bold;
+    }
+
+table
+    {
+    border-collapse: collapse;
+    }
+
+tr,td
+    {
+    border:2px solid rgb(218, 218, 218);
+    width:3em;
+    height:3em;
+    text-align:center;
+    }
+
+    /* ===== Tailles ===== */
+@media only screen and (max-width: 319px)  
+    {
+    tr
+        {
+        font-size: 10px;
+        }
+    }
+
+/* Iphone X*/
+@media only screen and (max-width: 767px) and (min-width: 320px)  
+    {
+    tr
+        {
+        font-size: 25px;
+        }      
+    }
+
+/* Ipad */
+@media only screen and (max-width: 1023px) and (min-width: 768px)  
+    {
+    tr
+        {
+        font-size: 35px;
+        }  
+    }
+
+@media only screen and (max-width: 1279px) and (min-width: 1024px)  
+    {
+
+    }    
+
+/* PC Portable */
+@media only screen and (max-width: 1535px) and (min-width: 1280px)  
+    {
+    tr
+        {
+        font-size: 40px;
+        }  
+    }    
+
+@media only screen and (max-width: 1919px) and (min-width: 1536px)  
+    {
+
+    }
+
+@media only screen and (max-width: 2559px) and (min-width: 1920px)  
+    {
+    tr
+        {
+        font-size: 35px;
+        }    
+    }       
+
+@media only screen and (min-width: 2560px)  
+    {
+    tr
+        {
+        font-size: 55px;
+        }  
+    }   
